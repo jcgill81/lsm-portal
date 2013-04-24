@@ -96,7 +96,27 @@
       border-radius: 3px;
       padding: 5px 15px;
       background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(125,185,232,0) 100%);
+    }
+
+    #on-call-list {
+      border: 1px solid black;
+      margin: 10px;
+      tr {
+        border-bottom: 1px solid black;
       }
+    }
+    .name{
+        padding: 5px;
+        font-weight: bold;
+    }
+    .number{
+      padding: 10px;
+      font-style: italic;
+    }
+    #table-caption{
+      padding: 10px;
+    }
+
 
     </style>
   </head>
@@ -132,13 +152,41 @@
           <a id="jira" href="https://moovweb.atlassian.net">Jira</A>
         </div>
       </div>
+      <div class="on-call">
+        <div id="table-caption">After Hours On Call List:</div>
+        <table id="on-call-list">
+          <tr>
+            <td class="name">Shane</td>
+            <td class="number">626-221-1507</td>
+            <td class="email"><a href="mailto:shane.frykholm@moovweb.com">shane.frykholm@moovweb.com</a></td>
+          </tr>
+          <tr>
+            <td class="name">Alex</td>
+            <td class="number">650-384-9202</td>
+            <td class="email"><a href="mailto:alex.desimone@moovweb.com">alex.desimone@moovweb.com</a></td>
+          </tr>
+          <tr>
+            <td class="name">Gio</td>
+            <td class="number">510-507-3211</td>
+            <td class="email"><a href="mailto:giovanni.bryden@moovweb.com">giovanni.bryden@moovweb.com</a></td>
+          </tr>
+          <tr>
+            <td class="name">Jeff</td>
+            <td class="number">858-598-3156</td>
+            <td class="email"><a href="mailto:jeff.patzer@moovweb.com">jeff.patzer@moovweb.com</a></td>
+          </tr>
+          <tr>
+            <td class="name">Phil</td>
+            <td class="number">415-407-4805</td>
+            <td class="email"><a href="mailto:phil.mueller@moovweb.com">phil.mueller@moovweb.com</a></td>
+        </table>
+      </div>
     </div>
 
       <div class ="footer">
         <div>Copyright 2013.
         </div>
-        <div>Got Beef? <a href="mailto:james.gill@moovweb.com?Subject=Portal">E-mail me and let me know</A>
-        </div>
+        <div>Got Beef? <a href="mailto:james.gill@moovweb.com?Subject=Portal">E-mail me and let me know.</a>
 
       </div>
 
