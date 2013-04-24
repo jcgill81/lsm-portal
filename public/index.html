@@ -26,8 +26,12 @@
     #h_image{
     }
 
-    #h_text {
-      /*float: right;*/
+    #h_logo {
+      background:url("assets/alt-title.png");
+      /*background: no-repeat;*/
+      width: 340px;
+      height:75px;
+      display: block;
       font-family: times, serif;
     }
 
@@ -80,30 +84,29 @@
     }
 
     .links{
-      margin: 20px 0px;
+      margin: 10px 0;
+      display: inline-block;
     }
 
     #jira{
-      border: 1px solid blue;
+      border: 1px solid gray;
       border-radius: 3px;
-      padding: 5px 15px;
-      background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(125,185,232,0) 100%); 
-      margin-top: 20px;
+      padding: 5px 40px;
+      background: linear-gradient(to top, rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%);
     }
 
     #conf { 
-      border: 1px solid blue;
+      border: 1px solid gray;
       border-radius: 3px;
       padding: 5px 15px;
-      background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(125,185,232,0) 100%);
+      background: linear-gradient(to top, rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%);
     }
 
     #on-call-list {
       border: 1px solid black;
       margin: 10px;
-      tr {
-        border-bottom: 1px solid black;
-      }
+      box-shadow: inset 0 -2px 2px rgba(0,0,0,0.2)
+
     }
     .name{
         padding: 5px;
@@ -126,7 +129,7 @@
         <a href="http://www.moovweb.com" id="logo-image">
         </a>
       </div>
-      <h1 id='h_text'>LSM PORTAL</h1>
+      <div id='h_logo'></div>
         <h2>This will one day hold all inflight information for Live Site Maintenance projects</h2>
     </div>
     <div class="mainWrapper">
@@ -144,6 +147,23 @@
           <td>
         <tr>
       </table>
+      <div class="google">
+      <!-- Search Google -->
+      
+      <FORM method=GET action="http://www.google.com/search">
+      <input type=hidden name=ie value=UTF-8>
+      <input type=hidden name=oe value=UTF-8>
+      <TABLE bgcolor="#E5E6E6"><tr><td>
+      <A HREF="http://www.google.com/">
+      <IMG SRC="http://www.google.com/logos/Logo_40wht.gif"
+      border="0" ALT="Google" align="absmiddle"></A>
+      <INPUT TYPE=text name=q size=25 maxlength=255 value="">
+      <INPUT type=submit name=btnG VALUE="Google Search">
+      </td></tr></TABLE>
+      </FORM>
+      <!-- Search Google -->
+
+      </div>
       <div class="link_container">
         <div class="links">
           <a id ="conf" href="https://moovwebconfluence.atlassian.net">Confluence</A>
