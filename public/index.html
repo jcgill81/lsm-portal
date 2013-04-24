@@ -24,9 +24,6 @@
     }
 
     #h_image{
-      background-image:url("http://assets.moovweb.net/moovweb-marketing/corpsite-prod/v118/images/d_sprite.png") 0px -676px;
-      float:left;
-      padding: 5px 20px 5px 5px;
     }
 
     #h_text {
@@ -45,16 +42,6 @@
     float: right;
     }
 
-    .footer{
-      margin:10px;
-    }
-
-    #img_holder{
-      padding: 5px;
-      background-color: #E5E6E6;
-      width: 100%;
-      box-shadow: inset 0 -2px 2px rgba(0,0,0,0.2)
-    }
     #logo-image{
       background: url("//assets.moovweb.net/moovweb-marketing/corpsite-prod/v118/images/d_sprite.png") no-repeat 0px -676px;
       height: 22px;
@@ -62,16 +49,54 @@
       display: block;
     }
 
+    .footer{
+      margin:10px;
+    }
+
+    .mainWrapper{
+      padding: 5px;
+      background-color: #E5E6E6;
+      width: 100%;
+      height: 500px;
+      box-shadow: inset 0 -2px 2px rgba(0,0,0,0.2)
+    }
+
+    #img_holder{
+      float:right;
+    }
+
     #cat_pic{
-      margin-left: auto;
-      margin-right: auto;
       display: block;
     }
 
     #caption{
-      padding: 5px;
       text-align: center;
+      padding: 5px;
     }
+
+    .link_container{
+      margin-top: -10px;
+      padding: 10px;
+    }
+
+    .links{
+      margin: 20px 0px;
+    }
+
+    #jira{
+      border: 1px solid blue;
+      border-radius: 3px;
+      padding: 5px 15px;
+      background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(125,185,232,0) 100%); 
+      margin-top: 20px;
+    }
+
+    #conf { 
+      border: 1px solid blue;
+      border-radius: 3px;
+      padding: 5px 15px;
+      background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(125,185,232,0) 100%);
+      }
 
     </style>
   </head>
@@ -84,14 +109,30 @@
       <h1 id='h_text'>LSM PORTAL</h1>
         <h2>This will one day hold all inflight information for Live Site Maintenance projects</h2>
     </div>
-      <div id = "img_holder">
-       
-              <img id="cat_pic" src ='http://s3-ec.buzzfed.com/static/enhanced/webdr02/2013/3/9/12/enhanced-buzz-11781-1362848560-6.jpg'>
-
-        <div id="caption">
-            In the meantime have a picture of a cat I took off buzzfeed
+    <div class="mainWrapper">
+      <table id="img_holder">
+        <tr>
+          <td>
+            <img id="cat_pic" src ='http://s3-ec.buzzfed.com/static/enhanced/webdr02/2013/3/9/12/enhanced-buzz-11781-1362848560-6.jpg'>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div id="caption">
+              In the meantime have a picture of a cat I took off buzzfeed
+            </div>
+          <td>
+        <tr>
+      </table>
+      <div class="link_container">
+        <div class="links">
+          <a id ="conf" href="https://moovwebconfluence.atlassian.net">Confluence</A>
+        </div>
+        <div class="links">
+          <a id="jira" href="https://moovweb.atlassian.net">Jira</A>
         </div>
       </div>
+    </div>
 
       <div class ="footer">
         <div>Copyright 2013.
