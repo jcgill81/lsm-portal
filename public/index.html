@@ -3,31 +3,63 @@
   <head>
     <title>LSM IN-FLIGHT DASH</title>
     <style type="text/css" media="screen">
-    body{
-      margin:10px;
-      padding:10px;
+     
+    body {
+      margin:0px;
     }
-    h1{
-      font-size: 32px;
-    }
-    h2 {
-      font-size: 24px;
-      padding: 10px;
 
+    h1 {
+      font-size: 40px;
+      color: black;
+      font-style:italic;
+    }
+
+    h2 {
+      font-size: 16px;
+      font-family: tsBold,sans-serif;
+      font-color: #374F56;
+    }
+    .header{
+      margin: 5px;
     }
 
     #h_image{
+      background-image:url("http://assets.moovweb.net/moovweb-marketing/corpsite-prod/v118/images/d_sprite.png") 0px -676px;
       float:left;
-      padding-right: 20px;
-      margin-top: -10px; 
+      padding: 5px 20px 5px 5px;
     }
 
     #h_text {
-      vertical-align: middle;
+      /*float: right;*/
+      font-family: times, serif;
+    }
+
+    .logo {
+    display: inline-block;
+    width: 165px;
+    height: 30px;
+    margin-top: 20px;
+    color: transparent;
+    text-indent: -9999px;
+    overflow: hidden;
+    float: right;
+    }
+
+    .footer{
+      margin:10px;
     }
 
     #img_holder{
+      padding: 5px;
+      background-color: #E5E6E6;
       width: 100%;
+      box-shadow: inset 0 -2px 2px rgba(0,0,0,0.2)
+    }
+    #logo-image{
+      background: url("//assets.moovweb.net/moovweb-marketing/corpsite-prod/v118/images/d_sprite.png") no-repeat 0px -676px;
+      height: 22px;
+      width: 162px;
+      display: block;
     }
 
     #cat_pic{
@@ -37,6 +69,7 @@
     }
 
     #caption{
+      padding: 5px;
       text-align: center;
     }
 
@@ -44,19 +77,27 @@
   </head>
   <body>
     <div class='header'>
-      <img id="h_image" src="assets/logo.png">
+      <div class="logo">
+        <a href="http://www.moovweb.com" id="logo-image">
+        </a>
+      </div>
       <h1 id='h_text'>LSM PORTAL</h1>
-      <p>
         <h2>This will one day hold all inflight information for Live Site Maintenance projects</h2>
-      </p>
     </div>
       <div id = "img_holder">
-        <div>
+       
               <img id="cat_pic" src ='http://s3-ec.buzzfed.com/static/enhanced/webdr02/2013/3/9/12/enhanced-buzz-11781-1362848560-6.jpg'>
-        </div>
+
         <div id="caption">
             In the meantime have a picture of a cat I took off buzzfeed
         </div>
       </div>
+
+      <div class ="footer">
+        <div>Copyright 2013.
+        </div>
+
+      </div>
+
   </body>
 </html>
