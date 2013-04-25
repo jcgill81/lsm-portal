@@ -14,6 +14,9 @@ body {
     font-family: tsBold,sans-serif;
     font-color: #374F56;
   }
+  a {
+    text-decoration: none;
+  }
     
   .header{
     margin: 5px;
@@ -70,7 +73,7 @@ body {
     padding: 5px;
     background-color: #E5E6E6;
     width: 100%;
-    height: 375px;
+    height: auto;
     box-shadow: inset 0 -2px 2px rgba(0,0,0,0.2);
   }
 
@@ -101,15 +104,39 @@ body {
     display: inline-block;
   }
 
-  #on-call-list {
+  .on-call-list {
     border: 1px solid black;
     margin: 10px;
-    box-shadow: inset 0 -2px 2px rgba(0,0,0,0.2)
+    box-shadow: inset 0 -2px 2px rgba(0,0,0,0.2);
+    width: 550px;
+    height: auto;
+  }
+  .box{
+    display:-webkit-box;
+    display:-moz-box;
+    display:box;
+  }
 
+  .horizontal {
+    -webkit-box-orient:horizontal;
+      -moz-box-orient:horizontal;
+          box-orient:horizontal;
+  }
+
+  .vertical {
+    -webkit-box-orient:vertical;
+       -moz-box-orient:vertical;
+            box-orient:vertical;
+  }
+
+  .flex1{
+      -webkit-box-flex:1;
+        -moz-box-flex:1;
+            box-flex:1;
   }
 
   .name {
-      padding: 5px;
+      padding: 10px;
       font-weight: bold;
   }
 
@@ -118,7 +145,11 @@ body {
     font-style: italic;
   }
 
-  #table-caption{
+  .email{
+    padding: 10px;
+  }
+
+  .table-caption{
     padding: 10px;
   }
 
