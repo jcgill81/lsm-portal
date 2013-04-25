@@ -15,6 +15,7 @@
     }
 
     h2 {
+      margin-left: 10px;
       font-size: 16px;
       font-family: tsBold,sans-serif;
       font-color: #374F56;
@@ -40,6 +41,7 @@
     width: 165px;
     height: 30px;
     margin-top: 20px;
+    margin-right: 20px;
     color: transparent;
     text-indent: -9999px;
     overflow: hidden;
@@ -53,16 +55,34 @@
       display: block;
     }
 
-    .footer{
-      margin:10px;
+    .mainNav{
+      display:table;
+      table-layout: fixed;
+      width: 100%;
+      border-top: 1px solid gray;
+      width: 100%;
+      background: linear-gradient(to top, rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%); 
     }
+ 
+    .navLink {
+      display: table-cell;
+      height: 30px;
+      padding: 10px 40px;
+      border:solid gray 1px;
+      border-radius:3px;  
+      text-align: center;
+      vertical-align: middle;
+      background: linear-gradient(to top, rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%);
+      box-shadow: 3px 3px 1px #888888;
+    }
+
 
     .mainWrapper{
       padding: 5px;
       background-color: #E5E6E6;
       width: 100%;
       height: 500px;
-      box-shadow: inset 0 -2px 2px rgba(0,0,0,0.2)
+      box-shadow: inset 0 -2px 2px rgba(0,0,0,0.2);
     }
 
     #img_holder{
@@ -84,22 +104,8 @@
     }
 
     .links{
-      margin: 10px 0;
+      margin: 10px 12px;
       display: inline-block;
-    }
-
-    #jira{
-      border: 1px solid gray;
-      border-radius: 3px;
-      padding: 5px 40px;
-      background: linear-gradient(to top, rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%);
-    }
-
-    #conf { 
-      border: 1px solid gray;
-      border-radius: 3px;
-      padding: 5px 15px;
-      background: linear-gradient(to top, rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%);
     }
 
     #on-call-list {
@@ -120,17 +126,35 @@
       padding: 10px;
     }
 
+    .footer{
+      margin:10px;
+    }
+
 
     </style>
   </head>
   <body>
     <div class='header'>
       <div class="logo">
-        <a href="http://www.moovweb.com" id="logo-image">
-        </a>
+        <a href="http://www.moovweb.com" id="logo-image"></a>
+        v.1
       </div>
       <div id='h_logo'></div>
-        <h2>This will one day hold all inflight information for Live Site Maintenance projects</h2>
+        <h2>This will one day hold all inflight information for Client Success projects</h2>
+    </div>
+    <div class="mainNav">
+      <div class="navLink">LSM Release Schedule</div>
+      <div class="navLink">Active Dev Projects</div>
+      <div class="navLink"><a href="https://docs.google.com/a/moovweb.com/spreadsheet/ccc?key=0Anjwwj6MxFIsdFlESVJiRllWWkEwNnZfUGIwVFNUa0E#gid=0" target="_blank">Upcoming On-Call Schedule</a></div>
+      <div class="navLink">
+          <a id ="conf" href="https://moovwebconfluence.atlassian.net">Confluence</A>
+      </div>
+      <div class="navLink">
+        <a id="jira" href="https://moovweb.atlassian.net">Jira</A>
+      </div>
+      <div class="navLink">
+        <a id="apollo" href="https://console.moovweb.com/">Apollo</a>
+      </div>
     </div>
     <div class="mainWrapper">
       <table id="img_holder">
@@ -164,14 +188,7 @@
       <!-- Search Google -->
 
       </div>
-      <div class="link_container">
-        <div class="links">
-          <a id ="conf" href="https://moovwebconfluence.atlassian.net">Confluence</A>
-        </div>
-        <div class="links">
-          <a id="jira" href="https://moovweb.atlassian.net">Jira</A>
-        </div>
-      </div>
+
       <div class="on-call">
         <div id="table-caption">After Hours On Call List:</div>
         <table id="on-call-list">
