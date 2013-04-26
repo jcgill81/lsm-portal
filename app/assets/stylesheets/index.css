@@ -79,6 +79,7 @@ body {
   #conf{
     width: 100%;
     height: auto;
+    max-height: 30px;
   }
 
   .mainWrapper{
