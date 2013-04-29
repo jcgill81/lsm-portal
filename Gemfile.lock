@@ -28,6 +28,7 @@ GEM
     activesupport (3.2.13)
       i18n (= 0.6.1)
       multi_json (~> 1.0)
+    addressable (2.3.4)
     arel (3.0.2)
     builder (3.0.4)
     coffee-rails (3.2.2)
@@ -53,6 +54,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.23)
     multi_json (1.7.2)
+    net-http-persistent (2.8)
     polyglot (0.3.3)
     rack (1.4.5)
     rack-cache (1.2)
@@ -61,6 +63,10 @@ GEM
       rack
     rack-test (0.6.2)
       rack (>= 1.0)
+    rack-wwwhisper (1.1.7)
+      addressable (~> 2.0)
+      net-http-persistent
+      rack (~> 1.0)
     rails (3.2.13)
       actionmailer (= 3.2.13)
       actionpack (= 3.2.13)
@@ -106,6 +112,7 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
   jquery-rails
+  rack-wwwhisper (~> 1.0)
   rails (= 3.2.13)
   sass-rails (~> 3.2.3)
   sqlite3
