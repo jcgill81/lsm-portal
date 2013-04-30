@@ -1,5 +1,0 @@
-AuthName "Index"
-AuthType Basic
-AuthUserFile /lsm-portal/public/
-Require valid-user
-
