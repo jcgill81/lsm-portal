@@ -1,7 +1,5 @@
 # This file is used by Rack-based servers to start the application.
 
 require ::File.expand_path('../config/environment',  __FILE__)
-run LsmPortal::Application
 
-require 'rack/wwwhisper' 
-use Rack::WWWhisper
+run LsmPortal::Application
